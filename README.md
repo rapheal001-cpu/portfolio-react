@@ -1,16 +1,61 @@
-# React + Vite
+# Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A clean, dark, minimal developer portfolio built with **React + Vite + Tailwind CSS v4**.
 
-Currently, two official plugins are available:
+## Sections
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Hero, About (bio + skills), Experience, Projects, Writing, Contact and Footer, with a sticky sidebar on desktop that stacks on mobile.
 
-## React Compiler
+## Local development
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```bash
+npm install
+npm run dev
+```
 
-## Expanding the Oxlint configuration
+Open the URL Vite prints (usually `http://localhost:5173`).
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+Build for production:
+
+```bash
+npm run build
+```
+
+The output goes to `dist/`.
+
+## Make it yours
+
+All editable content lives in **`src/data.js`**. See **[DATA.md](./DATA.md)** for a field-by-field checklist of every placeholder to replace. Browser tab title and meta description are in `index.html`.
+
+Colors are defined in `src/global.css` under `@theme`.
+
+## Deploy to Render
+
+This repo includes a `render.yaml` blueprint, so Render configures everything automatically.
+
+1. Go to [dashboard.render.com](https://dashboard.render.com) → **New** → **Blueprint**.
+2. Connect your GitHub account and select this repo (`portfolio-react`).
+3. Render reads `render.yaml` and creates a static site named `raph-tech-portfolio`.
+4. Click **Apply**. The first deploy takes a couple of minutes.
+
+After that, every push to `main` triggers a new deploy automatically.
+
+**Manual setup** (if you prefer **New → Static Site** instead of a Blueprint):
+
+| Setting | Value |
+| --- | --- |
+| Repository | `https://github.com/rapheal001-cpu/portfolio-react` |
+| Branch | `main` |
+| Runtime | Static Site |
+| Build command | `npm ci && npm run build` |
+| Publish directory | `dist` |
+| Node version | 22 |
+
+Your live URL will look like `https://raph-tech-portfolio.onrender.com`.
+
+## Stack
+
+- React 19
+- Vite 8
+- Tailwind CSS v4 (`@tailwindcss/vite` plugin)
+- Inter + JetBrains Mono via Google Fonts
