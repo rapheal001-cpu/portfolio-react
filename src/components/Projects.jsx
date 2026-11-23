@@ -1,13 +1,6 @@
 import data from '../data'
 import Section from './Section'
 
-const accents = [
-  'from-mint/25 to-navy-700',
-  'from-sky-400/25 to-navy-700',
-  'from-fuchsia-400/20 to-navy-700',
-  'from-amber-300/20 to-navy-700',
-]
-
 export default function Projects() {
   return (
     <Section id="projects" number="03" title="Things I've Built">
@@ -15,36 +8,48 @@ export default function Projects() {
         {data.projects.map((project, i) => (
           <article
             key={i}
-            className="group flex flex-col overflow-hidden rounded-lg border border-line bg-navy-700/50 transition hover:-translate-y-1 hover:border-mint/50 hover:bg-navy-700"
+            className="group flex flex-col overflow-hidden rounded-2xl border border-border bg-surface shadow-sm transition hover:-translate-y-1 hover:shadow-lg"
           >
-            <div
-              className={`flex h-40 items-center justify-center border-b border-line bg-gradient-to-br ${accents[i % accents.length]}`}
-            >
-              <span className="font-mono text-4xl font-semibold text-slate-light/50">
-                0{i + 1}
-              </span>
-            </div>
-
+            <img
+              src={project.image}
+              alt={`${project.title} preview`}
+              className="h-64 w-full object-cover object-top sm:h-80"
+            />
             <div className="flex flex-1 flex-col p-6">
-              <h3 className="text-xl font-semibold text-slate-light">
+              <div className="flex items-center justify-between gap-3">
+                <span className="font-mono text-xs text-accent-bright">
+                  0{i + 1}
+                </span>
+                {project.repoVisibility && (
+                  <span className="rounded-full border border-border bg-canvas px-2.5 py-0.5 font-mono text-[10px] uppercase tracking-wide text-muted">
+                    {project.repoVisibility} repo
+                  </span>
+                )}
+              </div>
+              <h3 className="mt-2 text-xl font-bold text-ink">
                 {project.title}
               </h3>
-              <p className="mt-3 text-sm leading-relaxed text-slate">
+              <p className="mt-3 text-sm leading-relaxed text-muted">
                 {project.description}
               </p>
-              <ul className="mt-5 flex flex-wrap gap-x-4 gap-y-1">
+
+              <ul className="mt-5 flex flex-wrap gap-2">
                 {project.tags.map((tag) => (
-                  <li key={tag} className="font-mono text-xs text-mint">
+                  <li
+                    key={tag}
+                    className="rounded-full bg-accent-soft px-3 py-1 font-mono text-xs text-accent-bright"
+                  >
                     {tag}
                   </li>
                 ))}
               </ul>
-              <div className="mt-6 flex gap-6 pt-2">
+
+              <div className="mt-auto flex gap-6 pt-6">
                 <a
                   href={project.liveUrl}
                   target="_blank"
                   rel="noreferrer"
-                  className="font-mono text-xs text-slate transition hover:text-mint"
+                  className="font-mono text-xs text-muted transition hover:text-accent-bright"
                 >
                   Live demo <span aria-hidden="true">↗</span>
                 </a>
@@ -52,7 +57,7 @@ export default function Projects() {
                   href={project.sourceUrl}
                   target="_blank"
                   rel="noreferrer"
-                  className="font-mono text-xs text-slate transition hover:text-mint"
+                  className="font-mono text-xs text-muted transition hover:text-accent-bright"
                 >
                   Source <span aria-hidden="true">↗</span>
                 </a>

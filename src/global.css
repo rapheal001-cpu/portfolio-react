@@ -6,14 +6,18 @@
   --font-mono: "JetBrains Mono", ui-monospace, "SFMono-Regular", Consolas,
     monospace;
 
-  /* Dark, minimal palette inspired by a classic developer portfolio */
-  --color-navy: #0a192f;
-  --color-navy-800: #0d213c;
-  --color-navy-700: #112240;
-  --color-slate-light: #ccd6f6;
-  --color-slate: #8892b0;
-  --color-mint: #64ffda;
-  --color-line: #233554;
+  /* Bold, clean navy-blue theme: deep navy canvas, lighter navy surfaces,
+     bright blue text accents and rich blue buttons. */
+  --color-canvas: #06162e;
+  --color-surface: #0c2344;
+  --color-ink: #f8fafc;
+  --color-ink-soft: #dbeafe;
+  --color-muted: #9fb3cf;
+  --color-accent: #2563eb;
+  --color-accent-bright: #8ab9ff;
+  --color-accent-dark: #1d4ed8;
+  --color-accent-soft: #16345e;
+  --color-border: #1d3a63;
 }
 
 @layer base {
@@ -22,14 +26,20 @@
   }
 
   body {
-    @apply bg-navy text-slate font-sans antialiased;
+    @apply bg-canvas text-ink font-sans antialiased;
+    background-image: radial-gradient(
+      1000px 520px at 85% -10%,
+      rgba(37, 99, 235, 0.22),
+      transparent 60%
+    );
+    background-attachment: fixed;
   }
 
   ::selection {
-    @apply bg-mint/25 text-slate-light;
+    @apply bg-accent/30 text-ink;
   }
 
   *:focus-visible {
-    @apply outline-2 outline-offset-4 outline-mint;
+    @apply outline-2 outline-offset-4 outline-accent-bright;
   }
 }

@@ -6,12 +6,14 @@ const data = {
   // ---- Basics -------------------------------------------------
   name: 'Rapheal Kukoyi',
   initials: 'RK',
+  // Drop a replacement photo into public/ and update this path if needed.
+  profileImage: '/rapheal.jpeg',
   role: 'Full-Stack Developer',
   location: 'Lagos, Nigeria',
-  email: '',
+  email: 'kkukoyirapheal@gmail.com',
   availability: 'Open to learning, collaboration, and opportunities',
 
-  // ---- Sidebar navigation ------------------------------------
+  // ---- Top navigation -----------------------------------------
   nav: [
     { label: 'About', id: 'about' },
     { label: 'Journey', id: 'experience' },
@@ -22,6 +24,10 @@ const data = {
   // ---- Social links ------------------------------------------
   socials: [
     { label: 'GitHub', url: 'https://github.com/rapheal001-cpu' },
+    {
+      label: 'LinkedIn',
+      url: 'https://www.linkedin.com/in/rapheal-kukoyi-9172472bb/',
+    },
   ],
 
   // ---- Hero ---------------------------------------------------
@@ -39,81 +45,61 @@ const data = {
     heading: 'A little about me',
     paragraphs: [
       "I'm Rapheal, a developer who enjoys turning ideas into working digital products. My coding journey began with HTML, where I learned the foundations of building for the web. Over time, I moved into CSS and JavaScript, then explored Python and Django to understand how applications work behind the scenes.",
-      'As I grew, I started building full-stack applications and working with APIs, databases, authentication, and real-time features. Today, I use React on the frontend and Django with Django REST Framework on the backend. Two of the projects I have built are SkillStream, a learning and content-sharing platform, and NaijaBay, a Nigerian online marketplace.',
+      'As I grew, I started building full-stack applications and working with APIs, databases, authentication, and real-time features. Today, I use React on the frontend and Django with Django REST Framework on the backend. One of the projects I have built is SkillStream, a learning and content-sharing platform.',
       'I believe development is a continuous learning process. Alongside the technologies I already use, I am currently learning Dart and Flutter so I can build mobile experiences too. I also enjoy sharing knowledge and helping other people learn as I grow.',
     ],
     skillsTitle: 'Technologies and tools I work with:',
-    skills: [
-      'HTML',
-      'CSS',
-      'JavaScript',
-      'React',
-      'Python',
-      'Django',
-      'Django REST Framework',
-      'Dart (Learning)',
-      'Flutter (Learning)',
-      'Tailwind CSS',
-      'Redux Toolkit',
-      'TanStack Query',
-      'Axios',
-      'REST APIs',
-      'WebSockets',
-      'PostgreSQL',
-      'SQLite',
-      'Redis',
-      'Celery',
-      'Git',
-      'GitHub',
-      'Stripe',
-      'Paystack',
+    skillGroups: [
+      {
+        title: 'Frontend',
+        skills: [
+          'HTML',
+          'CSS',
+          'JavaScript',
+          'React',
+          'Tailwind CSS',
+          'Redux Toolkit',
+          'TanStack Query',
+          'Axios',
+          'Dart (Learning)',
+          'Flutter (Learning)',
+        ],
+      },
+      {
+        title: 'Backend',
+        skills: [
+          'Python',
+          'Django',
+          'Django REST Framework',
+          'REST APIs',
+          'WebSockets',
+          'PostgreSQL',
+          'MySQL',
+          'SQLite',
+          'Redis',
+          'Celery',
+          'Stripe',
+          'Paystack',
+        ],
+      },
+      {
+        title: 'Tools',
+        skills: ['Git', 'GitHub', 'Docker'],
+      },
     ],
   },
 
-  // ---- Experience / Development journey -----------------------
-  // This section describes the user's learning and project journey,
-  // not employment at companies that have not been confirmed.
+  // ---- Work experience ----------------------------------------
+  // Add your work experience entries here when you are ready.
   resumeUrl: '',
-  experience: [
-    {
-      company: 'Independent Learning & Projects',
-      role: 'Full-Stack Developer',
-      period: 'Around 5 years — Present',
-      description:
-        'Started learning web development with HTML and gradually expanded into CSS, JavaScript, Python, and Django. Progressed into building full-stack applications with React on the frontend and Django REST Framework on the backend. Focus areas include API integration, authentication, databases, real-time communication, background tasks, and payment integrations. Currently learning Dart and Flutter for mobile development.',
-      tech: [
-        'HTML',
-        'CSS',
-        'JavaScript',
-        'Python',
-        'Django',
-        'React',
-        'Django REST Framework',
-        'Dart',
-        'Flutter',
-      ],
-    },
-    {
-      company: 'Personal Projects',
-      role: 'Builder & Knowledge Sharer',
-      period: 'Ongoing',
-      description:
-        'Built SkillStream, a platform for learning, instructors, courses, videos, and messaging; and NaijaBay, a marketplace for buyers and sellers. I enjoy documenting what I learn and sharing knowledge with other developers.',
-      tech: [
-        'SkillStream',
-        'NaijaBay',
-        'REST APIs',
-        'PostgreSQL',
-        'WebSockets',
-        'GitHub',
-      ],
-    },
-  ],
+  experience: [],
 
   // ---- Projects -----------------------------------------------
   projects: [
     {
       title: 'SkillStream',
+      image: '/skillstream-home.png',
+      repoVisibility: 'Private',
       description:
         'A learning and content-sharing platform where students and instructors can connect. It brings together creator channels, videos, courses, lessons, enrollments, subscriptions, messaging, and course payments. Built with a React frontend and a Django REST Framework backend.',
       tags: [
@@ -134,30 +120,7 @@ const data = {
         'Stripe',
       ],
       liveUrl: 'https://skillstream-rxhe.onrender.com',
-      sourceUrl: 'https://github.com/rapheal001-cpu/skillstream',
-    },
-    {
-      title: 'NaijaBay',
-      description:
-        'A Nigerian online marketplace built to help people discover products and connect with sellers. Buyers can browse and search listings, save favorites, and chat with sellers, while sellers can manage products and stores. The platform includes real-time messaging and payment-related features.',
-      tags: [
-        'React',
-        'Vite',
-        'JavaScript',
-        'Tailwind CSS',
-        'Redux Toolkit',
-        'TanStack Query',
-        'Axios',
-        'Python',
-        'Django',
-        'Django REST Framework',
-        'PostgreSQL',
-        'Django Channels',
-        'WebSockets',
-        'Paystack',
-      ],
-      liveUrl: 'https://naijabay.onrender.com',
-      sourceUrl: 'https://github.com/rapheal001-cpu/Naija-Bay',
+      sourceUrl: 'https://github.com/rapheal001-cpu/skillstream.git',
     },
   ],
 
@@ -166,17 +129,22 @@ const data = {
 
   // ---- Contact ------------------------------------------------
   contact: {
-    eyebrow: 'Have a project in mind?',
+    eyebrow: 'Get in touch',
     heading: "Let's build something meaningful.",
     description:
-      "I'm always interested in learning, collaborating, and connecting with people who enjoy building useful products. Reach out through my GitHub profile, or contact me once my email address is added here.",
-    button: 'Visit my GitHub profile',
+      "I'm always interested in learning, collaborating, and connecting with people who enjoy building useful products. Reach out by phone, email, or message — I'd love to hear from you.",
+    name: 'Rapheal Kukoyi',
+    address: 'Lagos, Nigeria',
+    phone: '+2349162271251',
+    whatsapp: '+2349162271251',
+    telegram: '+234 91 6227 1251',
+    button: 'Send me an email',
     url: 'https://github.com/rapheal001-cpu',
   },
 
   // ---- Footer -------------------------------------------------
   footer: {
-    note: 'Designed and built with React, Vite & Tailwind CSS. Always learning, always building.',
+    note: 'Always learning, always building.',
   },
 }
 
