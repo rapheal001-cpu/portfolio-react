@@ -17,7 +17,7 @@ export default function About() {
         <p className="font-mono text-sm font-medium text-ink-soft">
           {about.skillsTitle}
         </p>
-        <div className="mt-6 grid gap-5 sm:grid-cols-3">
+        <div className="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {about.skillGroups.map((group) => (
             <div
               key={group.title}

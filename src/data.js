@@ -42,16 +42,17 @@ const data = {
 
   // ---- About --------------------------------------------------
   about: {
-    heading: 'A little about me',
+    heading: 'About me',
     paragraphs: [
-      "I'm Rapheal, a developer who enjoys turning ideas into working digital products. My coding journey began with HTML, where I learned the foundations of building for the web. Over time, I moved into CSS and JavaScript, then explored Python and Django to understand how applications work behind the scenes.",
-      'As I grew, I started building full-stack applications and working with APIs, databases, authentication, and real-time features. Today, I use React on the frontend and Django with Django REST Framework on the backend. One of the projects I have built is SkillStream, a learning and content-sharing platform.',
-      'I believe development is a continuous learning process. Alongside the technologies I already use, I am currently learning Dart and Flutter so I can build mobile experiences too. I also enjoy sharing knowledge and helping other people learn as I grow.',
+      'I am a Full-Stack Software Engineer with 5 years of experience designing, developing, and maintaining modern web applications and software solutions. My expertise spans both frontend and backend engineering, with a strong focus on building scalable architectures, intuitive user interfaces, efficient APIs, and reliable application infrastructure.',
+      'I specialize in developing end-to-end software solutions using React, JavaScript, Python, Django, and Django REST Framework. I have practical experience implementing authentication and authorization systems, RESTful APIs, database architecture, real-time communication, payment integrations, background task processing, and third-party service integrations.',
+      'Beyond writing code, I approach software development with an engineering mindset, emphasizing clean architecture, maintainability, performance optimization, security, and practical problem-solving. I enjoy transforming complex requirements into functional, user-focused applications while ensuring that the underlying systems remain reliable and extensible.',
+      'My work reflects a commitment to continuous improvement, thoughtful engineering decisions, and building software that solves real-world problems.',
     ],
-    skillsTitle: 'Technologies and tools I work with:',
+    skillsTitle: 'Technical skills:',
     skillGroups: [
       {
-        title: 'Frontend',
+        title: 'Frontend Development',
         skills: [
           'HTML',
           'CSS',
@@ -60,39 +61,77 @@ const data = {
           'Tailwind CSS',
           'Redux Toolkit',
           'TanStack Query',
-          'Axios',
           'Dart (Learning)',
           'Flutter (Learning)',
         ],
       },
       {
-        title: 'Backend',
-        skills: [
-          'Python',
-          'Django',
-          'Django REST Framework',
-          'REST APIs',
-          'WebSockets',
-          'PostgreSQL',
-          'MySQL',
-          'SQLite',
-          'Redis',
-          'Celery',
-          'Stripe',
-          'Paystack',
-        ],
+        title: 'Backend Development',
+        skills: ['Python', 'Django', 'Celery'],
       },
       {
-        title: 'Tools',
-        skills: ['Git', 'GitHub', 'Docker'],
+        title: 'Database Management',
+        skills: ['PostgreSQL', 'MySQL', 'SQLite', 'Redis'],
+      },
+      {
+        title: 'API Development',
+        skills: ['Django REST Framework', 'REST APIs', 'Axios'],
+      },
+      {
+        title: 'Authentication and Security',
+        skills: ['JWT Authentication', 'Role-Based Access', 'Application Security'],
+      },
+      {
+        title: 'Real-time Communication',
+        skills: ['WebSockets', 'Django Channels'],
+      },
+      {
+        title: 'Payment Integration',
+        skills: ['Stripe', 'Paystack'],
+      },
+      {
+        title: 'Development Tools and Deployment',
+        skills: ['Git', 'GitHub', 'Docker', 'Vite', 'Render'],
       },
     ],
   },
 
-  // ---- Work experience ----------------------------------------
-  // Add your work experience entries here when you are ready.
+  // ---- Professional experience --------------------------------
   resumeUrl: '',
-  experience: [],
+  experience: [
+    {
+      role: 'Independent Full-Stack Software Engineer',
+      engagement: 'Independent Project / Product Development',
+      period: 'Ongoing',
+      project: 'SkillStream — Learning and Knowledge-Sharing Platform',
+      description:
+        'Designed and developed SkillStream, a full-stack learning and knowledge-sharing platform that connects instructors and students through an integrated digital learning environment.',
+      highlights: [
+        "Architected and developed the application's frontend and backend systems.",
+        'Built responsive user interfaces and interactive application features using React and JavaScript.',
+        'Developed backend services and RESTful APIs using Python, Django, and Django REST Framework.',
+        'Implemented user authentication, authorization, and role-based access for instructors and students.',
+        'Developed course management and learning-related functionality.',
+        'Implemented real-time messaging and communication features.',
+        'Integrated supporting systems for notifications, user profiles, and application workflows.',
+        'Worked on database design, API optimization, application security, and backend performance.',
+        'Managed application deployment, environment configuration, and production troubleshooting.',
+      ],
+      tech: [
+        'React',
+        'JavaScript',
+        'Python',
+        'Django',
+        'Django REST Framework',
+        'PostgreSQL',
+        'REST APIs',
+        'HTML',
+        'CSS',
+        'Git',
+        'Render',
+      ],
+    },
+  ],
 
   // ---- Projects -----------------------------------------------
   projects: [

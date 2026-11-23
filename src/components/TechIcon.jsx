@@ -22,8 +22,11 @@ import {
   SiDocker,
   SiSwagger,
   SiSocketdotio,
+  SiJsonwebtokens,
+  SiVite,
+  SiRender,
 } from 'react-icons/si'
-import { FaCreditCard } from 'react-icons/fa6'
+import { FaCreditCard, FaShieldHalved, FaLock } from 'react-icons/fa6'
 
 const icons = {
   HTML: SiHtml5,
@@ -41,7 +44,13 @@ const icons = {
   Python: SiPython,
   Django: SiDjango,
   'Django REST Framework': SiDjango,
+  'Django Channels': SiDjango,
   'REST APIs': SiSwagger,
+  'JWT Authentication': SiJsonwebtokens,
+  'Role-Based Access': FaShieldHalved,
+  'Application Security': FaLock,
+  Vite: SiVite,
+  Render: SiRender,
   WebSockets: SiSocketdotio,
   PostgreSQL: SiPostgresql,
   MySQL: SiMysql,
