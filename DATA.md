@@ -122,17 +122,24 @@ The card image area is currently a numbered gradient placeholder. If you want re
 
 ---
 
-## 8. Writing — `writing[]`
+## 8. Writing — `writing`
 
-Each post has: `title`, `description`, `date`, `url`.
+`writing` is an object with `heading`, `description`, `categories[]`, and `articles[]`. The Writing section renders cards with category filtering; no article links are shown until a real URL exists.
 
-| Current `title` | `date` |
+Each entry in `articles[]` has: `title`, `category`, `description`, `status`, and optionally `readingTime` and `url`.
+
+| Field | Purpose |
 | --- | --- |
-| `Building accessible components from the start` | `Jan 2025` |
-| `Why I switched to Tailwind CSS` | `Oct 2024` |
-| `A practical guide to React Server Components` | `Jul 2024` |
+| `title` | Article title shown on the card |
+| `category` | Must match one of the values in `categories[]` for filtering to work |
+| `description` | Short, accurate summary of the topic |
+| `status` | e.g. `Draft` — shown as a badge until the article is published |
+| `readingTime` | Optional; rendered as "N min read" only when present |
+| `url` | Optional; the "Read Article" link appears only when set |
 
-If you don't write blog posts, see the note in section 2 about removing the section.
+Current entries are draft topics, not published articles. To publish one, write the article, then add its `url` (and optionally `readingTime`) and change `status` to `Published`. To add a category, add its name to `categories[]`.
+
+If you don't write articles, see the note in section 2 about removing the section.
 
 ---
 

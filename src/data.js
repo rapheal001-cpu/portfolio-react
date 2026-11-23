@@ -163,8 +163,82 @@ const data = {
     },
   ],
 
-  // No published articles or writing links have been provided yet.
-  writing: [],
+  // ---- Technical writing --------------------------------------
+  // Draft topics only. These are planned articles, not published work.
+  // Add `url` (and optionally `readingTime`) when an article is actually
+  // published — the "Read Article" link appears only when `url` is set.
+  writing: {
+    heading: 'Technical Writing & Engineering Insights',
+    description:
+      'Practical insights into software engineering, backend development, frontend architecture, API design, and the technologies I use to build real-world applications.',
+    categories: [
+      'Backend Engineering',
+      'Frontend Development',
+      'Python & Django',
+      'API Development',
+      'Database Engineering',
+      'Software Architecture',
+      'Developer Tools & Workflow',
+    ],
+    articles: [
+      {
+        title: 'Understanding REST API Architecture: From Request to Response',
+        category: 'API Development',
+        description:
+          'A practical walk through the request-to-response lifecycle: routing, input validation, business logic, serialization, and status codes in a REST API.',
+        status: 'Draft',
+      },
+      {
+        title: 'Building Authentication Systems with Django REST Framework',
+        category: 'Python & Django',
+        description:
+          'How authentication fits into Django REST Framework, from serializers and user lookup to permission classes and protected endpoints.',
+        status: 'Draft',
+      },
+      {
+        title: 'Understanding JWT Authentication and Secure Token Management',
+        category: 'Backend Engineering',
+        description:
+          'What a JWT contains, how signing and expiry work, and the practical trade-offs of storing and refreshing tokens in a web application.',
+        status: 'Draft',
+      },
+      {
+        title: 'How React Communicates with Backend APIs',
+        category: 'Frontend Development',
+        description:
+          'How a React client talks to a backend API: request setup, loading and error states, authentication headers, and keeping UI state in sync.',
+        status: 'Draft',
+      },
+      {
+        title: 'Understanding Database Relationships in Django',
+        category: 'Database Engineering',
+        description:
+          'How Django models express one-to-one, one-to-many, and many-to-many relationships, and what that means for queries and migrations.',
+        status: 'Draft',
+      },
+      {
+        title: 'Background Task Processing with Celery and Redis',
+        category: 'Backend Engineering',
+        description:
+          'Why background tasks matter in backend systems, and how Celery workers and Redis queues handle work outside the request cycle.',
+        status: 'Draft',
+      },
+      {
+        title: 'Building Scalable Backend Applications with Django',
+        category: 'Software Architecture',
+        description:
+          'Structuring Django applications for growth: separating concerns, managing dependencies, and keeping views and services maintainable.',
+        status: 'Draft',
+      },
+      {
+        title: 'Common Backend Development Mistakes and How to Avoid Them',
+        category: 'Developer Tools & Workflow',
+        description:
+          'Recurring backend development pitfalls — weak validation, unclear error handling, and untested edge cases — and the habits that avoid them.',
+        status: 'Draft',
+      },
+    ],
+  },
 
   // ---- Contact ------------------------------------------------
   contact: {
