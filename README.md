@@ -2,6 +2,18 @@
 
 A clean, dark, minimal developer portfolio built with **React + Vite + Tailwind CSS v4**.
 
+## About Me
+
+I'm a Software Developer with approximately 5 years of experience in programming and a strong interest in building reliable, scalable, and maintainable software solutions.
+
+My development experience spans frontend and backend engineering, with a primary focus on **JavaScript, React.js, Python, Django, and Django REST Framework**. I enjoy designing and developing full-stack applications, building RESTful APIs, implementing authentication and application logic, and creating responsive user interfaces.
+
+Beyond writing code, I'm interested in software architecture, database design, API development, performance optimization, and understanding the engineering principles behind production-ready applications.
+
+I approach development with a problem-solving mindset, emphasizing clean code, maintainability, security, and continuous improvement. I also enjoy exploring new technologies, experimenting with ideas, and contributing to the developer community through knowledge sharing.
+
+**My goal is to build software that solves meaningful problems, delivers real value, and stands the test of time.**
+
 ## Sections
 
 Hero, About (bio + skills), Experience, Projects, Writing, Contact and Footer, with a sticky sidebar on desktop that stacks on mobile.
