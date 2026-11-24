@@ -2,12 +2,15 @@
 // All editable portfolio content lives here.
 // ============================================================
 
+// Works on both Render (root path) and GitHub Pages (/reaphtech-portfolio/).
+const asset = (path) => `${import.meta.env.BASE_URL}${path.replace(/^\//, '')}`
+
 const data = {
   // ---- Basics -------------------------------------------------
   name: 'Rapheal Kukoyi',
   initials: 'RK',
   // Drop a replacement photo into public/ and update this path if needed.
-  profileImage: '/rapheal.jpeg',
+  profileImage: asset('rapheal.jpeg'),
   role: 'Full-Stack Developer',
   location: 'Lagos, Nigeria',
   email: 'kkukoyirapheal@gmail.com',
@@ -138,7 +141,7 @@ const data = {
   projects: [
     {
       title: 'SkillStream',
-      image: '/skillstream-home.png',
+      image: asset('skillstream-home.png'),
       repoVisibility: 'Private',
       description:
         'A learning and content-sharing platform where students and instructors can connect. It brings together creator channels, videos, courses, lessons, enrollments, subscriptions, messaging, and course payments. Built with a React frontend and a Django REST Framework backend.',
@@ -164,7 +167,7 @@ const data = {
     },
     {
       title: 'Understand Tools',
-      image: '/understand-tools.svg',
+      image: asset('understand-tools.svg'),
       repoVisibility: 'Public',
       description:
         'A public documentation library for the tools I use every day. It explains Docker, MCP for AI, and the packages that matter for web development, security and scaling — what each one does, why it is needed, and where to read the official docs.',
