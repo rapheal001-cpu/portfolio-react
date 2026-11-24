@@ -2,6 +2,20 @@ import data from '../data'
 import Section from './Section'
 import TechIcon from './TechIcon'
 
+/** Render a paragraph, turning **bold** markers into strong text. */
+function RichText({ text }) {
+  return text.split(/(\*\*[^*]+\*\*)/g).map((part, i) =>
+    part.startsWith('**') && part.endsWith('**') ? (
+      <strong key={i} className="font-semibold text-ink">
+        {part.slice(2, -2)}
+      </strong>
+    ) : (
+      part
+    ),
+  )
+}
+
+/** Render the About section with bio paragraphs and skill groups. */
 export default function About() {
   const { about } = data
 
@@ -9,7 +23,9 @@ export default function About() {
     <Section id="about" number="01" title={about.heading}>
       <div className="max-w-3xl space-y-5 text-base leading-relaxed text-muted">
         {about.paragraphs.map((paragraph, i) => (
-          <p key={i}>{paragraph}</p>
+          <p key={i}>
+            <RichText text={paragraph} />
+          </p>
         ))}
       </div>
 

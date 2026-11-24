@@ -42,12 +42,13 @@ const data = {
 
   // ---- About --------------------------------------------------
   about: {
-    heading: 'About me',
+    heading: 'About Me',
     paragraphs: [
-      "I'm Rapheal, a full-stack developer based in Lagos. I started with HTML and CSS, moved into Python and Django, and now spend most of my time building React interfaces on top of Django REST APIs. I like owning the whole path from an idea to something running in production.",
-      'My main project, SkillStream, is a learning platform where instructors publish courses and videos, students enrol, and people talk in real time. Building it has made me comfortable with authentication and roles, REST API design, PostgreSQL, Redis, Celery background jobs, WebSockets and Stripe payments — the parts that matter once an app leaves the happy path.',
-      'I care about the less visible work too: writing tests, keeping queries fast, setting sensible security headers and cookie rules, and making deployments repeatable with Docker and GitHub Actions. A feature is not finished for me until it is reliable and the next developer can understand it.',
-      "I'm still learning — Dart and Flutter are my current focus — and I write plain-English notes about the tools I use in my Understand Tools repository. I'm open to collaborating on products where careful engineering and a good user experience matter equally.",
+      "I'm a Software Developer with approximately 5 years of experience in programming and a strong interest in building reliable, scalable, and maintainable software solutions.",
+      'My development experience spans frontend and backend engineering, with a primary focus on **JavaScript, React.js, Python, Django, and Django REST Framework**. I enjoy designing and developing full-stack applications, building RESTful APIs, implementing authentication and application logic, and creating responsive user interfaces.',
+      "Beyond writing code, I'm interested in software architecture, database design, API development, performance optimization, and understanding the engineering principles behind production-ready applications.",
+      'I approach development with a problem-solving mindset, emphasizing clean code, maintainability, security, and continuous improvement. I also enjoy exploring new technologies, experimenting with ideas, and contributing to the developer community through knowledge sharing.',
+      '**My goal is to build software that solves meaningful problems, delivers real value, and stands the test of time.**',
     ],
     skillsTitle: 'Technical skills:',
     skillGroups: [
