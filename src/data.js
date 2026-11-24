@@ -44,10 +44,10 @@ const data = {
   about: {
     heading: 'About me',
     paragraphs: [
-      'I am a Full-Stack Software Engineer with 5 years of experience designing, developing, and maintaining modern web applications and software solutions. My expertise spans both frontend and backend engineering, with a strong focus on building scalable architectures, intuitive user interfaces, efficient APIs, and reliable application infrastructure.',
-      'I specialize in developing end-to-end software solutions using React, JavaScript, Python, Django, and Django REST Framework. I have practical experience implementing authentication and authorization systems, RESTful APIs, database architecture, real-time communication, payment integrations, background task processing, and third-party service integrations.',
-      'Beyond writing code, I approach software development with an engineering mindset, emphasizing clean architecture, maintainability, performance optimization, security, and practical problem-solving. I enjoy transforming complex requirements into functional, user-focused applications while ensuring that the underlying systems remain reliable and extensible.',
-      'My work reflects a commitment to continuous improvement, thoughtful engineering decisions, and building software that solves real-world problems.',
+      "I'm Rapheal, a full-stack developer based in Lagos. I started with HTML and CSS, moved into Python and Django, and now spend most of my time building React interfaces on top of Django REST APIs. I like owning the whole path from an idea to something running in production.",
+      'My main project, SkillStream, is a learning platform where instructors publish courses and videos, students enrol, and people talk in real time. Building it has made me comfortable with authentication and roles, REST API design, PostgreSQL, Redis, Celery background jobs, WebSockets and Stripe payments — the parts that matter once an app leaves the happy path.',
+      'I care about the less visible work too: writing tests, keeping queries fast, setting sensible security headers and cookie rules, and making deployments repeatable with Docker and GitHub Actions. A feature is not finished for me until it is reliable and the next developer can understand it.',
+      "I'm still learning — Dart and Flutter are my current focus — and I write plain-English notes about the tools I use in my Understand Tools repository. I'm open to collaborating on products where careful engineering and a good user experience matter equally.",
     ],
     skillsTitle: 'Technical skills:',
     skillGroups: [
