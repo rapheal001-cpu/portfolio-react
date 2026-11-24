@@ -163,6 +163,7 @@ const data = {
     },
     {
       title: 'Understand Tools',
+      image: '/understand-tools.svg',
       repoVisibility: 'Public',
       description:
         'A public documentation library for the tools I use every day. It explains Docker, MCP for AI, and the packages that matter for web development, security and scaling — what each one does, why it is needed, and where to read the official docs.',
