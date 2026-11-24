@@ -25,7 +25,7 @@ The output goes to `dist/`.
 
 ## Make it yours
 
-All editable content lives in **`src/data.js`**. See **[DATA.md](./DATA.md)** for a field-by-field checklist of every placeholder to replace. Browser tab title and meta description are in `index.html`.
+All editable content lives in **`src/data.js`** (projects, writing, skills, contact). Browser tab title and meta description are in `index.html`.
 
 Colors are defined in `src/global.css` under `@theme`.
 
@@ -34,7 +34,7 @@ Colors are defined in `src/global.css` under `@theme`.
 This repo includes a `render.yaml` blueprint, so Render configures everything automatically.
 
 1. Go to [dashboard.render.com](https://dashboard.render.com) → **New** → **Blueprint**.
-2. Connect your GitHub account and select this repo (`portfolio-react`).
+2. Connect your GitHub account and select this repo (`reaphtech-portfolio`).
 3. Render reads `render.yaml` and creates a static site named `raph-tech-portfolio`.
 4. Click **Apply**. The first deploy takes a couple of minutes.
 
@@ -44,7 +44,7 @@ After that, every push to `main` triggers a new deploy automatically.
 
 | Setting | Value |
 | --- | --- |
-| Repository | `https://github.com/rapheal001-cpu/portfolio-react` |
+| Repository | `https://github.com/rapheal001-cpu/reaphtech-portfolio` |
 | Branch | `main` |
 | Runtime | Static Site |
 | Build command | `npm ci && npm run build` |

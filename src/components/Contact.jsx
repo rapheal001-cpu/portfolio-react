@@ -60,7 +60,7 @@ export default function Contact() {
             {contact.eyebrow}
           </p>
           <h3 className="mt-4 max-w-lg text-3xl font-bold tracking-tight text-ink sm:text-4xl">
-            {contact.heading}
+
           </h3>
           <p className="mt-4 max-w-lg leading-relaxed text-muted">
             {contact.description}

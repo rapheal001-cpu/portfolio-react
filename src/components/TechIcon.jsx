@@ -28,6 +28,7 @@ import {
 } from 'react-icons/si'
 import { FaCreditCard, FaShieldHalved, FaLock } from 'react-icons/fa6'
 
+
 const icons = {
   HTML: SiHtml5,
   CSS: SiCss,
@@ -64,6 +65,7 @@ const icons = {
   Docker: SiDocker,
 }
 
+/** Render the tech icon component. */
 export default function TechIcon({ name, className }) {
   const Icon = icons[name]
   if (!Icon) {

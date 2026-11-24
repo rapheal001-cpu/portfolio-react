@@ -1,6 +1,8 @@
 import data from '../data'
 import Section from './Section'
 
+
+/** Render the experience component. */
 export default function Experience() {
   const { experience, resumeUrl } = data
 

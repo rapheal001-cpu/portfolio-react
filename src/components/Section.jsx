@@ -1,3 +1,4 @@
+/** Render the section component. */
 export default function Section({ id, number, title, children }) {
   return (
     <section id={id} className="scroll-mt-28 border-t border-border py-16 sm:py-20">

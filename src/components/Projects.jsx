@@ -1,6 +1,8 @@
 import data from '../data'
 import Section from './Section'
 
+
+/** Render the projects component. */
 export default function Projects() {
   return (
     <Section id="projects" number="03" title="Things I've Built">

@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import data from '../data'
+
 import Section from './Section'
 
 export default function Writing() {

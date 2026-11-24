@@ -6,6 +6,7 @@ const stroke = {
   strokeLinejoin: 'round',
 }
 
+/** Render the user icon component. */
 export function UserIcon(props) {
   return (
     <svg viewBox="0 0 24 24" {...stroke} {...props}>
@@ -15,6 +16,7 @@ export function UserIcon(props) {
   )
 }
 
+/** Render the map pin icon component. */
 export function MapPinIcon(props) {
   return (
     <svg viewBox="0 0 24 24" {...stroke} {...props}>
@@ -24,6 +26,7 @@ export function MapPinIcon(props) {
   )
 }
 
+/** Render the phone icon component. */
 export function PhoneIcon(props) {
   return (
     <svg viewBox="0 0 24 24" {...stroke} {...props}>
@@ -32,6 +35,7 @@ export function PhoneIcon(props) {
   )
 }
 
+/** Render the mail icon component. */
 export function MailIcon(props) {
   return (
     <svg viewBox="0 0 24 24" {...stroke} {...props}>
@@ -41,6 +45,7 @@ export function MailIcon(props) {
   )
 }
 
+/** Render the message icon component. */
 export function MessageIcon(props) {
   return (
     <svg viewBox="0 0 24 24" {...stroke} {...props}>
@@ -49,6 +54,7 @@ export function MessageIcon(props) {
   )
 }
 
+/** Render the send icon component. */
 export function SendIcon(props) {
   return (
     <svg viewBox="0 0 24 24" {...stroke} {...props}>
@@ -58,6 +64,7 @@ export function SendIcon(props) {
   )
 }
 
+/** Render the git hub icon component. */
 export function GitHubIcon(props) {
   return (
     <svg viewBox="0 0 24 24" fill="currentColor" {...props}>
@@ -66,6 +73,7 @@ export function GitHubIcon(props) {
   )
 }
 
+/** Render the linked in icon component. */
 export function LinkedInIcon(props) {
   return (
     <svg viewBox="0 0 24 24" fill="currentColor" {...props}>
