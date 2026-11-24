@@ -161,6 +161,22 @@ const data = {
       liveUrl: 'https://skillstream-rxhe.onrender.com',
       sourceUrl: 'https://github.com/rapheal001-cpu/skillstream.git',
     },
+    {
+      title: 'Understand Tools',
+      repoVisibility: 'Public',
+      description:
+        'A public documentation library for the tools I use every day. It explains Docker, MCP for AI, and the packages that matter for web development, security and scaling — what each one does, why it is needed, and where to read the official docs.',
+      tags: [
+        'Documentation',
+        'Docker',
+        'MCP',
+        'Markdown',
+        'Developer Tools',
+        'Web Security',
+        'Scaling',
+      ],
+      sourceUrl: 'https://github.com/rapheal001-cpu/understand-tools',
+    },
   ],
 
   // ---- Technical writing --------------------------------------

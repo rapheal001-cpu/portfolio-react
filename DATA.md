@@ -109,16 +109,15 @@ Copy a whole `{ ... }` block to add another job.
 
 ## 7. Projects — `projects[]`
 
-Each project has: `title`, `description`, `tags[]`, `liveUrl`, `sourceUrl`.
+Each project has: `title`, `description`, `tags[]`, `repoVisibility`, `sourceUrl`. Optional: `image`, `liveUrl`.
 
 | `title` | Current `liveUrl` / `sourceUrl` |
 | --- | --- |
-| `Project One` | `https://example.com/project-one` / `https://github.com/your-username/project-one` |
-| `Project Two` | `https://example.com/project-two` / `.../project-two` |
-| `Project Three` | `https://example.com/project-three` / `.../project-three` |
-| `Project Four` | `https://example.com/project-four` / `.../project-four` |
+| `SkillStream` | `https://skillstream-rxhe.onrender.com` / `https://github.com/rapheal001-cpu/skillstream.git` |
+| `Understand Tools` | _(no live demo — documentation repo)_ / `https://github.com/rapheal001-cpu/understand-tools` |
 
-The card image area is currently a numbered gradient placeholder. If you want real screenshots, tell me and I'll wire up an `image` field plus local image files.
+Add an `image` path (e.g. `/my-project.png`) for a screenshot. Without one, the card shows a
+gradient tile with the project's initials. A "Live demo" link only appears when `liveUrl` is set.
 
 ---
 

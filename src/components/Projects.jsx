@@ -10,11 +10,19 @@ export default function Projects() {
             key={i}
             className="group flex flex-col overflow-hidden rounded-2xl border border-border bg-surface shadow-sm transition hover:-translate-y-1 hover:shadow-lg"
           >
-            <img
-              src={project.image}
-              alt={`${project.title} preview`}
-              className="h-64 w-full object-cover object-top sm:h-80"
-            />
+            {project.image ? (
+              <img
+                src={project.image}
+                alt={`${project.title} preview`}
+                className="h-64 w-full object-cover object-top sm:h-80"
+              />
+            ) : (
+              <div className="flex h-64 w-full items-center justify-center bg-gradient-to-br from-accent-soft to-canvas sm:h-80">
+                <span className="font-mono text-5xl font-bold text-accent-bright/60">
+                  {project.title.slice(0, 2).toUpperCase()}
+                </span>
+              </div>
+            )}
             <div className="flex flex-1 flex-col p-6">
               <div className="flex items-center justify-between gap-3">
                 <span className="font-mono text-xs text-accent-bright">
@@ -45,22 +53,26 @@ export default function Projects() {
               </ul>
 
               <div className="mt-auto flex gap-6 pt-6">
-                <a
-                  href={project.liveUrl}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="font-mono text-xs text-muted transition hover:text-accent-bright"
-                >
-                  Live demo <span aria-hidden="true">↗</span>
-                </a>
-                <a
-                  href={project.sourceUrl}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="font-mono text-xs text-muted transition hover:text-accent-bright"
-                >
-                  Source <span aria-hidden="true">↗</span>
-                </a>
+                {project.liveUrl && (
+                  <a
+                    href={project.liveUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="font-mono text-xs text-muted transition hover:text-accent-bright"
+                  >
+                    Live demo <span aria-hidden="true">↗</span>
+                  </a>
+                )}
+                {project.sourceUrl && (
+                  <a
+                    href={project.sourceUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="font-mono text-xs text-muted transition hover:text-accent-bright"
+                  >
+                    Source <span aria-hidden="true">↗</span>
+                  </a>
+                )}
               </div>
             </div>
           </article>
